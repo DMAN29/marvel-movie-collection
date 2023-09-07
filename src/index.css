@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Noto+Sans:wght@500;800&family=Tilt+Prism&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+body{
+  background-color: aliceblue;
+}
+.heading{
+  background-color: bisque;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 10px 10px 8px #888888;
+  color:#585252;
+  margin-bottom:3rem
+}
+.heading h1{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Tilt Prism', cursive;
+}
+.search-box{
+  background-color: rgb(80, 75, 75);
+  border-radius: 2rem;
+  display: flex;
+  width: 300px;
+}
+.search{
+  font-size: 1rem;
+  outline: none;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: whitesmoke;
+}
+.search-btn{
+  background: none;
+  border: none ;
+  font-size: 1.5rem;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+}
+.cards{
+  background-color: lightsteelblue;
+  text-align: center;
+  margin: 2rem;
+  padding: 0.5rem;
+  width: 300px;
+  height: 550px;
+  box-shadow: 10px 10px 8px 5px  #888888;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.details{
+  font-weight: bold;
+}
+.flex{
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn{
+  padding: 0.5rem 2rem;
+  border-radius: 3rem;
+  margin-top: 0.5rem;
+  border: 2px solid #888888;
+  cursor: pointer;
+  }
+  .soon{
+    padding: 0.5rem 2rem;
+  border-radius: 3rem;
+  margin-top: 0.5rem;
+  border: 2px solid #888888;
+  background-color: whitesmoke;
+  }
+.cards:hover ,.btn:hover{
+  transform:scale(1.05);
+  transition: ease-in-out 200ms;
+}
+img{
+  width: 90%;
+  height: 70%;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+.error{
+  text-align: center;
+}
+@media (max-width: 720px) {
+  .heading{
+    display: block;
+    text-align: center;
+  }
+  .search-box{
+    margin: auto;
+    
+  }
+}
